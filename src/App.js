@@ -1,11 +1,13 @@
 import React from 'react'
 import AboutUs from './pages/AboutUs'
+//global styles
+import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
   return (
     <div>
-      <h3>app component </h3>
-      <AboutUs/>
+      <GlobalStyle/>
+      <AboutUs />
     </div>
   );
 }
