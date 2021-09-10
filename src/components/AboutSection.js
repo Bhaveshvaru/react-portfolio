@@ -8,15 +8,15 @@ const AboutSection =()=>{
         <About>
             <Description>
                 <div className="title">
-                    <div className="hide">
+                    <Hide>
                         <h2>We work to make</h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2>your <span>dreams</span> come</h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2>true.</h2>
-                    </div>
+                    </Hide>
                 </div>
                 <p>contact us for any photography and videography ideas that you have.we have professsinal with amazing skills.</p>
                 <button>Contact Us</button>
@@ -51,6 +51,9 @@ img{
     height: 80vh;
     object-fit: cover;
 }
+`
+const Hide = styled.div`
+overflow: hidden;
 `
 
 export default AboutSection;
