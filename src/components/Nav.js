@@ -1,20 +1,37 @@
 import React from 'react';
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-import {motion} from "framer-motion"
+import {motion} from "framer-motion";
+import {useLocation} from 'react-router-dom'
+
 const Nav = ()=>{
+    const {pathname} = useLocation()
+    console.log("dfd",pathname)
 return(
     <StyledNav>
     <h1><Link id="logo" to="/" >Capture</Link></h1>
     <ul>
         <li>
             <Link to="/">About Us</Link>
+            {pathname == '/' ? 
+                        <Line transition={{duration:0.75}} initial={{width:"0%"}} 
+                        animate={{width:'100%'}} />
+            : ""} 
         </li>
         <li>
             <Link to="/work">Our Work</Link>
+            {pathname == '/work' ? 
+                        <Line transition={{duration:0.75}} initial={{width:"0%"}} 
+                        animate={{width:'100%'}} />
+            : ""} 
+
         </li>
         <li>
             <Link to="/contact">Contact Us</Link>
+            {pathname == '/contact' ? 
+                        <Line transition={{duration:0.75}} initial={{width:"0%"}} 
+                        animate={{width:'100%'}} />
+            : ""} 
         </li>
     </ul>
     </StyledNav>
