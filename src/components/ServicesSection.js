@@ -7,7 +7,7 @@ import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 //styles
 import styled from 'styled-components'
-import {About,Description,Imgae} from "../styles";
+import {About,Description,Image} from "../styles";
 import {fade} from "../pages/animation"
 import {useScroll} from './useScroll';
 
@@ -52,9 +52,9 @@ const [element,control] = useScroll()
           </Card>
         </Cards>
       </Description>
-            <Imgae>
+            <Image>
             <img src={home2} alt="home" />
-            </Imgae>
+            </Image>
         </Services>
     )
 }
