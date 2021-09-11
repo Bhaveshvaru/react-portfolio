@@ -25,6 +25,7 @@ return(
         <Deatils variants={pageAnimaiton} initial="hidden" animate="show" exit="exit">
         <HeadLine>
         <h1>{movie.title}</h1>
+        <div className="line"></div>
         <img src={movie.mainImg} alt="movie" />
         </HeadLine>
         <Awards>
@@ -33,7 +34,6 @@ return(
             ))}
         </Awards>
         <ImageDisplay>
-            // eslint-disable-next-line jsx-a11y/img-redundant-alt
             <img src={movie.secondaryImg} alt="image" />
         </ImageDisplay>
         </Deatils>
@@ -51,6 +51,12 @@ const HeadLine = styled.div`
 min-height:90vh;
 padding-top:20vh;
 position: relative;
+.line {
+    width:100%;
+    background:#23d997;
+    height:0.5rem;
+    margin:1rem 0rem;
+  }
 h1{
     position: absolute;
     top:10%;
