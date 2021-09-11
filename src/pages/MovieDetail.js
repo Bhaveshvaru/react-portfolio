@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React,{useState,useEffect} from 'react';
 import {useHistory} from 'react-router-dom';
 import {MovieState} from "../MovieState";
@@ -30,6 +33,7 @@ return(
             ))}
         </Awards>
         <ImageDisplay>
+            // eslint-disable-next-line jsx-a11y/img-redundant-alt
             <img src={movie.secondaryImg} alt="image" />
         </ImageDisplay>
         </Deatils>

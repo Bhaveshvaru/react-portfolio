@@ -13,14 +13,14 @@ return(
     <ul>
         <li>
             <Link to="/">About Us</Link>
-            {pathname == '/' ? 
+            {pathname === '/' ? 
                         <Line transition={{duration:0.75}} initial={{width:"0%"}} 
                         animate={{width:'50%'}} />
             : ""} 
         </li>
         <li>
             <Link to="/work">Our Work</Link>
-            {pathname == '/work' ? 
+            {pathname === '/work' ? 
                         <Line transition={{duration:0.75}} initial={{width:"0%"}} 
                         animate={{width:'50%'}} />
             : ""} 
@@ -28,7 +28,7 @@ return(
         </li>
         <li>
             <Link to="/contact">Contact Us</Link>
-            {pathname == '/contact' ? 
+            {pathname === '/contact' ? 
                         <Line transition={{duration:0.75}} initial={{width:"0%"}} 
                         animate={{width:'50%'}} />
             : ""} 
