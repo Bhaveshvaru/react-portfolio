@@ -5,10 +5,15 @@ import {Link} from 'react-router-dom'
 import athelete from '../img/athlete-small.png';
 import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
+//animation 
+import {motion} from 'framer-motion'
+import {pageAnimaiton ,fade ,photoAnim} from './animation'
 
 const OurWork =()=>{
 return(
-    <Work>
+    <Work variants={pageAnimaiton} initial="hidden" animate="show" exit="exit"
+    style={{background:"#fff"}}
+    >
         <Movie>
         <h1>The Athelete</h1>
         <div className="line"></div>
@@ -35,7 +40,7 @@ return(
 }
 
 //styled components
-const Work = styled.div`
+const Work = styled(motion.div)`
 min-height: 100vh;
 overflow: hidden ;
 padding: 5rem 10rem;
