@@ -11,10 +11,10 @@ return(
             <Link to="/">About Us</Link>
         </li>
         <li>
-            <Link to="work">Our Work</Link>
+            <Link to="/work">Our Work</Link>
         </li>
         <li>
-            <Link to="contact">Contact Us</Link>
+            <Link to="/contact">Contact Us</Link>
         </li>
     </ul>
     </StyledNav>
@@ -29,6 +29,9 @@ justify-content: space-between;
 align-items: center;
 padding: 1rem 10rem;
 background:#282828;
+position: sticky;
+top:0;
+z-index: 10;
 a{
     color:white;
     text-decoration:none;

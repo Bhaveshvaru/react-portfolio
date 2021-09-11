@@ -8,6 +8,7 @@ import ContactUs from "./pages/ContactUs"
 import OurWork from "./pages/OurWork"
 import MovieDetail from "./pages/MovieDetail"
 import { AnimatePresence} from 'framer-motion'
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   const location = useLocation();
@@ -15,6 +16,7 @@ function App() {
   return (
     <div>
       <GlobalStyle/>
+      <ScrollTop/>
       <Nav/>
       <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.pathname}>

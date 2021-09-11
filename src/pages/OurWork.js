@@ -9,6 +9,7 @@ import goodtimes from '../img/goodtimes-small.png';
 import {motion} from 'framer-motion'
 import {pageAnimaiton ,fade ,photoAnim,lineAnim,slider,sliderContainer} from './animation'
 
+
 const OurWork =()=>{
 return(
     <Work variants={pageAnimaiton} initial="hidden" animate="show" exit="exit"
@@ -43,6 +44,7 @@ return(
         <img src={goodtimes} alt="goodtimes" />
         </Link>
         </Movie>
+
     </Work>
 )
 }
